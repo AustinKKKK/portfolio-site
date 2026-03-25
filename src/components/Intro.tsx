@@ -69,7 +69,7 @@ export default function Intro() {
 
         <div className="mt-5 space-y-5 text-zinc-500">
 
-          <p className="max-w-[540px] text-lg text-zinc-500">
+          <p className="max-w-[540px] text-lg text-yellow-700">
             JAPAN 🇯🇵
           </p>
 
@@ -78,7 +78,7 @@ export default function Intro() {
             Rakuten | Software Application Engineer
           </p>
           <br />
-          <p className="max-w-[540px] text-lg text-zinc-500">
+          <p className="max-w-[540px] text-lg text-yellow-700">
             USA 🇺🇸
           </p>
 
