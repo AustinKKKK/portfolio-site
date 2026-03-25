@@ -68,9 +68,18 @@ export default function Intro() {
         </p>
 
         <div className="mt-5 space-y-5 text-zinc-500">
+
+          <p className="max-w-[540px] text-lg text-zinc-500">
+            JAPAN 🇯🇵
+          </p>
+
           <p className="max-w-[540px] text-lg text-zinc-500">
             2026.03 <br />
             Rakuten | Software Application Engineer
+          </p>
+          <br />
+          <p className="max-w-[540px] text-lg text-zinc-500">
+            USA 🇺🇸
           </p>
 
           <p className="max-w-[540px] text-lg text-zinc-500">
@@ -90,7 +99,7 @@ export default function Intro() {
 
           <p className="max-w-[540px] text-lg text-zinc-500">
             2022.09 ~ 2022.12 <br />
-            Trippian | Back-end Development Intern
+            Trippian | Back-end Development Intern 
           </p>
 
           <p className="max-w-[540px] text-lg text-zinc-500">
