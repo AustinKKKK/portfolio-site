@@ -186,14 +186,16 @@ export default function ResumePage() {
           </h2>
 
           <div className="mt-[10px]">
-            <div className="flex items-baseline justify-between text-[14px] leading-[1.2]">
+            <div className="grid grid-cols-[1fr_auto] gap-4 text-[14px] leading-[1.2]">
               <div className="font-bold">
                 RAG-QA Search Bar Integration{" "}
                 <span className="font-normal">
                   (Polymer, HTML, CSS, JavaScript, Node,js, Python, Docker)
                 </span>
               </div>
-              <div>Sept 2024 – Dec 2024</div>
+              <div className="shrink-0 text-right">
+                Sept 2024 – Dec 2024
+              </div>
             </div>
 
             <ul className="mt-[4px] list-disc pl-[18px] text-[13px] leading-[1.38]">
