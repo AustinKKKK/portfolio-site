@@ -23,12 +23,12 @@ export default function SideMenu() {
     <section className="flex h-full items-center justify-start">
       <div className="flex flex-col gap-10">
 
-        <Link href="/resume" className="group">
-          <LayeredText text="Resume" />
-        </Link>
-
         <Link href="/projects" className="group">
           <LayeredText text="Projects" />
+        </Link>
+
+        <Link href="/resume" className="group">
+          <LayeredText text="Resume" />
         </Link>
 
       </div>
