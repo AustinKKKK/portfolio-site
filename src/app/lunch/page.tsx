@@ -92,10 +92,10 @@ export default function ProjectsPage() {
 
   return (
     <main className="min-h-screen bg-black text-white">
-      <div className="mx-auto flex min-h-screen w-full max-w-7xl flex-col items-center justify-center gap-10 px-4 py-10 lg:flex-row lg:gap-20 lg:px-8">
+      <div className="mx-auto flex min-h-screen w-full max-w-7xl flex-col items-center justify-center gap-10 px-4 py-10 lg:flex-row lg:justify-center lg:gap-16 lg:px-8">
         <section
           className={`flex flex-col items-center gap-6 transition-all duration-700 ease-in-out ${
-            showMap ? "lg:-translate-x-10" : "translate-x-0"
+            showMap ? "lg:-translate-x-6" : "translate-x-0"
           }`}
         >
           <div className="text-3xl font-bold text-white sm:text-4xl">
@@ -109,10 +109,10 @@ export default function ProjectsPage() {
         </section>
 
         <section
-          className={`w-full max-w-[520px] transition-all duration-700 ease-in-out ${
+          className={`overflow-hidden transition-all duration-700 ease-in-out ${
             showMap
-              ? "translate-y-0 opacity-100 lg:translate-x-0"
-              : "pointer-events-none translate-y-6 opacity-0 lg:translate-x-10 lg:translate-y-0"
+              ? "max-h-[520px] w-full max-w-[520px] opacity-100 lg:ml-8"
+              : "max-h-0 w-0 max-w-0 opacity-0 pointer-events-none"
           }`}
         >
           <div className="w-full rounded-2xl border border-white/10 bg-white/5 p-4 shadow-2xl backdrop-blur">
