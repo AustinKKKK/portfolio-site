@@ -15,15 +15,15 @@ function LayeredText({
       onClick={onClick}
       className="relative inline-block cursor-pointer whitespace-nowrap group"
     >
-      <span className="invisible text-3xl font-bold">{text}</span>
+      <span className="invisible text-2xl font-bold sm:text-3xl">{text}</span>
 
-      <span className="absolute left-0 top-0 text-3xl font-bold text-white/15">
+      <span className="absolute left-0 top-0 text-2xl font-bold text-white/15 sm:text-3xl">
         {text}
       </span>
-      <span className="absolute left-1 top-1 text-3xl font-bold text-white/30">
+      <span className="absolute left-1 top-1 text-2xl font-bold text-white/30 sm:text-3xl">
         {text}
       </span>
-      <span className="absolute left-2 top-2 text-3xl font-bold text-white transition group-hover:text-blue-400">
+      <span className="absolute left-2 top-2 text-2xl font-bold text-white transition group-hover:text-blue-400 sm:text-3xl">
         {text}
       </span>
     </div>
@@ -31,7 +31,16 @@ function LayeredText({
 }
 
 export default function ProjectsPage() {
-  const menus = ["Ramen", "Sushi", "Curry", "Burger", "Udon", "Tonkatsu", "Pizza", "Chicken"];
+  const menus = [
+    "Ramen",
+    "Sushi",
+    "Curry",
+    "Burger",
+    "Udon",
+    "Tonkatsu",
+    "Pizza",
+    "Chicken",
+  ];
 
   const [index, setIndex] = useState(0);
   const [rolling, setRolling] = useState(false);
@@ -82,17 +91,14 @@ export default function ProjectsPage() {
   }, []);
 
   return (
-    <main className="min-h-screen overflow-hidden bg-black text-white">
-      <div className="relative min-h-screen">
-
+    <main className="min-h-screen bg-black text-white">
+      <div className="mx-auto flex min-h-screen w-full max-w-7xl flex-col items-center justify-center gap-10 px-4 py-10 lg:flex-row lg:gap-20 lg:px-8">
         <section
-          className={`absolute top-1/2 left-1/2 flex flex-col items-center gap-6 transition-all duration-700 ease-in-out ${
-            showMap
-              ? "-translate-x-[430px] -translate-y-1/2"
-              : "-translate-x-1/2 -translate-y-1/2"
+          className={`flex flex-col items-center gap-6 transition-all duration-700 ease-in-out ${
+            showMap ? "lg:-translate-x-10" : "translate-x-0"
           }`}
         >
-          <div className="text-4xl font-bold text-white">
+          <div className="text-3xl font-bold text-white sm:text-4xl">
             {menus[index]}
           </div>
 
@@ -103,18 +109,18 @@ export default function ProjectsPage() {
         </section>
 
         <section
-          className={`absolute top-1/2 left-1/2 transition-all duration-700 ease-in-out ${
+          className={`w-full max-w-[520px] transition-all duration-700 ease-in-out ${
             showMap
-              ? "translate-x-[80px] -translate-y-1/2 opacity-100"
-              : "translate-x-[220px] -translate-y-1/2 opacity-0 pointer-events-none"
+              ? "translate-y-0 opacity-100 lg:translate-x-0"
+              : "pointer-events-none translate-y-6 opacity-0 lg:translate-x-10 lg:translate-y-0"
           }`}
         >
-          <div className="w-[520px] rounded-2xl border border-white/10 bg-white/5 p-4 shadow-2xl backdrop-blur">
-            <div className="mb-3 text-lg font-semibold">
+          <div className="w-full rounded-2xl border border-white/10 bg-white/5 p-4 shadow-2xl backdrop-blur">
+            <div className="mb-3 text-base font-semibold sm:text-lg">
               Nearby {menus[index]} spots
             </div>
 
-            <div className="h-[380px] overflow-hidden rounded-xl">
+            <div className="h-[300px] overflow-hidden rounded-xl sm:h-[380px]">
               <LunchMap menu={menus[index]} />
             </div>
           </div>
