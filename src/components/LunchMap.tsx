@@ -85,7 +85,7 @@ function NearbyRestaurants({
           const bounds = new google.maps.LatLngBounds();
           bounds.extend(center);
           mapped.forEach((place) => bounds.extend(place.position));
-          map.fitBounds(bounds);
+          map.fitBounds(bounds, 60);
         }
       } catch (error) {
         console.error("Place.searchByText failed:", error);

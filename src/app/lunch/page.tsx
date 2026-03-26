@@ -37,7 +37,7 @@ export default function ProjectsPage() {
     "Curry",
     "Burger",
     "Udon",
-    "Tonkatsu",
+    "Fried Rice",
     "Pizza",
     "Chicken",
   ];
