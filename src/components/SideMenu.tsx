@@ -27,9 +27,9 @@ export default function SideMenu() {
           <LayeredText text="Resume" />
         </Link>
 
-        {/* <Link href="/coldbrew" className="group">
-          <LayeredText text="Cold Brew" />
-        </Link> */}
+        <Link href="/projects" className="group">
+          <LayeredText text="Projects" />
+        </Link>
 
       </div>
     </section>

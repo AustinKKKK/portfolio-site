@@ -62,7 +62,7 @@ export default function Intro() {
           </h1>
         </div>
 
-        <p className="mt-2 text-2xl text-zinc-200">
+        <p className="mt-2 font-extrabold text-2xl text-zinc-200">
           {text}
           <span className="ml-1 animate-pulse">|</span>
         </p>
