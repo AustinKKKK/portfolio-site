@@ -74,7 +74,7 @@ export default function Intro() {
           </p>
 
           <p className="max-w-[540px] text-lg text-zinc-500">
-            2026.03 <br />
+            2026.03 ~ Present <br />
             Rakuten | Software Application Engineer
           </p>
           <br />
