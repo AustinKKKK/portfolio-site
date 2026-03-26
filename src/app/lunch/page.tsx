@@ -23,7 +23,7 @@ function LayeredText({
       <span className="absolute left-1 top-1 text-2xl font-bold text-white/30 sm:text-3xl">
         {text}
       </span>
-      <span className="absolute left-2 top-2 text-2xl font-bold text-white transition group-hover:text-blue-400 sm:text-3xl">
+      <span className="absolute left-2 top-2 text-2xl font-bold text-white transition group-hover:text-blue-400 group-active:text-blue-400 sm:text-3xl">
         {text}
       </span>
     </div>

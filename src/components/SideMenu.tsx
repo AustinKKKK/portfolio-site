@@ -11,7 +11,7 @@ function LayeredText({ text }: { text: string }) {
         {text}
       </span>
 
-      <span className="absolute left-2 top-2 text-3xl font-bold text-white transition group-hover:text-blue-300">
+      <span className="absolute left-2 top-2 text-3xl font-bold text-white transition group-hover:text-blue-300 group-active:text-blue-400">
         {text}
       </span>
     </div>
